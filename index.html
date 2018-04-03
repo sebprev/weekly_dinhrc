@@ -10,38 +10,35 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-<body>
-    <div id="conteneur">
-        <div class="previous">
-            <div class="imgcontaineur">
-                <img src="img/left.png">
-            </div>
-        </div>
-        <div class="current">
-            <div id="projet">
-                <div>
-                    Projet
+<body onload="initTimer(120)">
+    <div class="container-fluid conteneur">
+        <div class="row">
+            <div class="col-md-2 previous">
+                <div class="imgcontaineur">
+                    <img src="img/left.png">
                 </div>
             </div>
-            <div id="personnes">
-                <div>
-                    Qui ?
+            <div class="col-md-8 current">
+                <div id="projet">
+                    Amigo
+                </div>
+                <div id="personnes">
+                    (Philippe, Corinne)
+                </div>
+                <div id="prog">
+                    <div class="progress">
+                        <div id="pbar" class="progress-bar" role="progressbar" style="width: 25%;">25%</div>
+                    </div>
                 </div>
             </div>
-            <div id="prog">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            <div class="col-md-2 next">
+                <div class="imgcontaineur">
+                    <img src="img/right.png">
                 </div>
             </div>
         </div>
-        <div class="next">
-            <div class="imgcontaineur">
-                <img src="img/right.png">
-            </div>
-        </div>
-    </div>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,63 +10,45 @@ body {
     color: white !important;
 }
 
-#conteneur
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.previous,
+.next,
+.current {
     height: 100%;
 }
 
-.previous {
-    flex-grow: 1;
-    cursor: pointer;
-}
-
-.current {
-    flex-grow: 7;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-}
-
+.previous,
 .next {
-    flex-grow: 1;
     cursor: pointer;
+    text-align: center;
 }
 
 img {
     width: 100px;
     padding: 10px;
-    height: 100%;
     object-fit: contain;
+    height: 100%;
 }
 
-.imgcontaineur {
-    text-align: center;
+.conteneur,
+.imgcontaineur,
+.row {
     height: 100%;
 }
 
 #projet {
-    flex-grow: 4;
-    display: flex;
-    font-size: 4em;
-}
-
-#projet > div {
-    margin: auto;
+    height: 50%;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    top: 30%;
 }
 
 #personnes {
-    flex-grow: 2;
-    display: flex;
-}
-
-#personnes > div {
+    height: 30%;
     text-align: center;
-    width: 100%;
+    font-size: 3em;
 }
 
-#prog {
-    flex-grow: 1;
+#progress {
+    height: 20%;
 }
