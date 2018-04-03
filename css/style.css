@@ -1,0 +1,71 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+#conteneur
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.previous {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.current {
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.next {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+    padding: 10px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imgcontaineur {
+    text-align: center;
+    height: 100%;
+}
+
+#projet {
+    flex-grow: 4;
+    display: flex;
+    font-size: 4em;
+}
+
+#projet > div {
+    margin: auto;
+}
+
+#personnes {
+    flex-grow: 2;
+    display: flex;
+}
+
+#personnes > div {
+    text-align: center;
+    width: 100%;
+}
+
+#prog {
+    flex-grow: 1;
+}
