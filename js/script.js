@@ -5,35 +5,35 @@ const time = document.getElementById('time');
 const imgLeft = document.getElementById('imgLeft');
 const imgRight = document.getElementById('imgRight');
 
-const previous = document.getElementsByClassName('previous')[0].addEventListener('click', function(event) {
-    if (currentIndex > 0) {
-        currentIndex = currentIndex - 1;
-        start();
-    }
-});
+document.getElementById('btnStart').addEventListener('click', function(event) {
+    document.getElementsByClassName('previous')[0].addEventListener('click', function(event) {
+        if (currentIndex > 0) {
+            currentIndex = currentIndex - 1;
+            start();
+        }
+    });
+    
+    document.getElementsByClassName('next')[0].addEventListener('click', function(event) {
+        if ((currentIndex + 1) < data.length) {
+            currentIndex = currentIndex + 1;
+            start();
+        }
+    });
 
-const next = document.getElementsByClassName('next')[0].addEventListener('click', function(event) {
-    if ((currentIndex + 1) < data.length) {
-        currentIndex = currentIndex + 1;
-        start();
-    }
+    start();
 });
 
 let timerProgress = undefined;
 
 let currentIndex = 0;
 
-const tmpFunc = function() {
-    setTimeout(() => {
-        start();
-    }, 1000);
-}
-
 const start = function() {
     if (currentIndex === 0) {
         imgLeft.className = "cache";
+        imgRight.className = "";
     }
     else if ((currentIndex + 1) === data.length) {
+        imgLeft.className = "";
         imgRight.className = "cache";
     }
     else {

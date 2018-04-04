@@ -8,23 +8,22 @@
     <title>Weekly DINH RC</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="img/logo_OCC_light.png">
 </head>
 
-<body onload="tmpFunc()">
+<body>
     <div class="container-fluid conteneur">
         <div class="row">
             <div class="col-md-2 previous">
                 <div class="imgcontaineur">
-                    <img id="imgLeft" src="img/left.png">
+                    <img id="imgLeft" src="img/left.png" class="cache">
                 </div>
             </div>
             <div class="col-md-8 current">
                 <div id="projet">
-                    _
+                    <button id="btnStart" type="button" class="btn btn-primary">Démarrer la Weekly</button>
                 </div>
-                <div id="personnes">
-                    _
-                </div>
+                <div id="personnes"></div>
                 <div id="prog">
                     <div class="progress">
                         <div id="pbar" class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
@@ -36,7 +35,7 @@
             </div>
             <div class="col-md-2 next">
                 <div class="imgcontaineur">
-                    <img id="imgRight" src="img/right.png">
+                    <img id="imgRight" src="img/right.png" class="cache">
                 </div>
             </div>
         </div>
