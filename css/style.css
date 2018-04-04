@@ -6,9 +6,9 @@ body {
 }
 
 body {
-    background-color: black !important;
+    background-color: #5c5c5c !important;
     color: white !important;
-    background: url("../img/logo_OCC.png") round;
+    background: url("../img/logo_OCC_light.png") round;
 }
 
 .previous,
