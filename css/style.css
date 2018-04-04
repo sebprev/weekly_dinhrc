@@ -8,6 +8,7 @@ body {
 body {
     background-color: black !important;
     color: white !important;
+    background: url("../img/logo_OCC.png") round;
 }
 
 .previous,
@@ -51,4 +52,13 @@ img {
 
 #progress {
     height: 20%;
+}
+
+#time {
+    text-align: center;
+    font-size: 4em;
+}
+
+.cache {
+    display: none;
 }

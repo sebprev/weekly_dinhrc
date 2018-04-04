@@ -10,34 +10,38 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-<body onload="initTimer(120)">
+<body onload="tmpFunc()">
     <div class="container-fluid conteneur">
         <div class="row">
             <div class="col-md-2 previous">
                 <div class="imgcontaineur">
-                    <img src="img/left.png">
+                    <img id="imgLeft" src="img/left.png">
                 </div>
             </div>
             <div class="col-md-8 current">
                 <div id="projet">
-                    Amigo
+                    _
                 </div>
                 <div id="personnes">
-                    (Philippe, Corinne)
+                    _
                 </div>
                 <div id="prog">
                     <div class="progress">
-                        <div id="pbar" class="progress-bar" role="progressbar" style="width: 25%;">25%</div>
+                        <div id="pbar" class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+                    </div>
+                    <div id="time">
+                        00:00
                     </div>
                 </div>
             </div>
             <div class="col-md-2 next">
                 <div class="imgcontaineur">
-                    <img src="img/right.png">
+                    <img id="imgRight" src="img/right.png">
                 </div>
             </div>
         </div>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/data.js"></script>
         <script src="js/script.js"></script>
 </body>
 
