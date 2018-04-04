@@ -12,7 +12,7 @@ document.getElementById('btnStart').addEventListener('click', function(event) {
             start();
         }
     });
-    
+
     document.getElementsByClassName('next')[0].addEventListener('click', function(event) {
         if ((currentIndex + 1) < data.length) {
             currentIndex = currentIndex + 1;
@@ -31,12 +31,10 @@ const start = function() {
     if (currentIndex === 0) {
         imgLeft.className = "cache";
         imgRight.className = "";
-    }
-    else if ((currentIndex + 1) === data.length) {
+    } else if ((currentIndex + 1) === data.length) {
         imgLeft.className = "";
         imgRight.className = "cache";
-    }
-    else {
+    } else {
         imgLeft.className = "";
         imgRight.className = "";
     }
@@ -60,18 +58,16 @@ const initTimer = function(secondes) {
 
     if (secondes === 0) {
         time.innerText = "00:00";
-        progress.style.width = '100%';
-        progress.innerText ='100%';
-    }
-    else {
+        setProgressValue('100%');
+    } else {
         time.innerText = ("" + Math.floor(((secondes - i) / 60))).padStart(2, "0") + ":" + ("" + ((secondes - i) % 60)).padStart(2, "0");
-    
+        setProgressValue('0%');
+
         timerProgress = setInterval(function() {
             i = i + 1;
             currentVal = currentVal + val;
-            progress.style.width = Math.round(currentVal) + '%';
-            progress.innerText = Math.round(currentVal) + '%';
-    
+            setProgressValue(Math.round(currentVal) + '%');
+
             time.innerText = ("" + Math.floor(((secondes - i) / 60))).padStart(2, "0") + ":" + ("" + ((secondes - i) % 60)).padStart(2, "0");
             if (i === secondes) {
                 clearInterval(timerProgress);
@@ -82,20 +78,24 @@ const initTimer = function(secondes) {
 
 }
 
+const setProgressValue = function(value) {
+    progress.style.width = value;
+    progress.innerText = value;
+}
+
 // Ployfill pour le PADSTART
 if (!String.prototype.padStart) {
-    String.prototype.padStart = function padStart(targetLength,padString) {
-        targetLength = targetLength>>0;
+    String.prototype.padStart = function padStart(targetLength, padString) {
+        targetLength = targetLength >> 0;
         padString = String((typeof padString !== 'undefined' ? padString : ' '));
         if (this.length > targetLength) {
             return String(this);
-        }
-        else {
-            targetLength = targetLength-this.length;
+        } else {
+            targetLength = targetLength - this.length;
             if (targetLength > padString.length) {
-                padString += padString.repeat(targetLength/padString.length);
+                padString += padString.repeat(targetLength / padString.length);
             }
-            return padString.slice(0,targetLength) + String(this);
+            return padString.slice(0, targetLength) + String(this);
         }
     };
 }
