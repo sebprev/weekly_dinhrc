@@ -7,42 +7,49 @@ const milweb = {
 const sirocco = {
     projet: 'SIROCCO',
     personnes: 'Phu Quang',
+    images: 'PhuQuangNguyen.jpg',
     duree: 240
 };
 
 const siroccolight = {
     projet: 'SIROCCO LIGHT',
     personnes: 'Philippe',
+    images: 'PhilippeButhod.jpg',
     duree: 120
 };
 
 const atcweb = {
     projet: 'ATCWEB',
     personnes: 'Philippe',
+    images: 'PhilippeButhod.jpg',
     duree: 120
 };
 
 const occtet = {
     projet: 'OCCTET',
     personnes: 'Philippe',
+    images: 'PhilippeButhod.jpg',
     duree: 60
 };
 
 const tfm = {
     projet: 'TFM',
     personnes: 'Laurent',
+    images: 'LaurentSauze.jpg',
     duree: 180
 };
 
 const ishare = {
     projet: 'ISHARE',
     personnes: 'Laurent',
+    images: 'LaurentSauze.jpg',
     duree: 120
 };
 
 const ptrakl = {
     projet: 'PTRAKL',
     personnes: 'Laurent',
+    images: 'LaurentSauze.jpg',
     duree: 60
 };
 
@@ -67,6 +74,7 @@ const encours = {
 const archi = {
     projet: "Sujets d'architecture",
     personnes: 'Jean Marc',
+    images: 'JeanMarcBourriatges.png',
     duree: 240
 };
 

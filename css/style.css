@@ -45,9 +45,17 @@ img {
 }
 
 #personnes {
-    height: 30%;
     text-align: center;
+}
+
+#nomPersonnes {
+    height: 30%;
     font-size: 3em;
+}
+
+#imgPersonnes {
+    height: 20%;
+    text-align: center;
 }
 
 #progress {
@@ -61,4 +69,7 @@ img {
 
 .cache {
     display: none;
+}
+.affiche {
+    display: inline;
 }

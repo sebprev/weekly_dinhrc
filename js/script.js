@@ -1,5 +1,6 @@
 const projetElem = document.getElementById('projet');
-const personnesElem = document.getElementById('personnes');
+const nomPersonnesElem = document.getElementById('nomPersonnes');
+const imgPersonnesElem = document.getElementById('imgPersonnes');
 const progress = document.getElementById('pbar');
 const time = document.getElementById('time');
 const imgLeft = document.getElementById('imgLeft');
@@ -48,7 +49,13 @@ const start = function() {
 
 const changeProjet = function(projet) {
     projetElem.innerText = projet.projet;
-    personnesElem.innerText = projet.personnes;
+    nomPersonnesElem.innerText = projet.personnes;
+    let nomImage = 'Quelquun.png';
+    if (projet.images) {
+        nomImage = projet.images;
+    }
+    imgPersonnesElem.className = "";
+    imgPersonnesElem.src = 'img/personnes/' + nomImage;
 }
 
 const initTimer = function(secondes) {
