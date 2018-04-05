@@ -29,6 +29,9 @@ let timerProgress = undefined;
 let currentIndex = 0;
 
 const start = function() {
+    progress.className = "progress-bar";
+    time.style.color = "white";
+
     if (currentIndex === 0) {
         imgLeft.className = "cache";
         imgRight.className = "";
@@ -79,6 +82,8 @@ const initTimer = function(secondes) {
             if (i === secondes) {
                 clearInterval(timerProgress);
                 timerProgress = undefined;
+                progress.className = "progress-bar bg-danger";
+                time.style.color = "red";
             }
         }, 1000);
     }

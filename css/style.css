@@ -72,3 +72,7 @@ img {
 .affiche {
     display: inline;
 }
+
+#horloge {
+    position: absolute;
+}
