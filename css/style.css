@@ -46,15 +46,14 @@ img {
 
 #personnes {
     text-align: center;
+    height: 30%;
 }
 
 #nomPersonnes {
-    height: 30%;
     font-size: 3em;
 }
 
 #imgPersonnes {
-    height: 20%;
     text-align: center;
 }
 
