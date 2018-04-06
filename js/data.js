@@ -1,6 +1,7 @@
 const milweb = {
     projet: 'MILWEB',
     personnes: 'Joël',
+    images: 'JoelCharry.jpg',
     duree: 240
 };
 
@@ -27,8 +28,8 @@ const atcweb = {
 
 const occtet = {
     projet: 'OCCTET',
-    personnes: 'Philippe',
-    images: 'PhilippeButhod.jpg',
+    personnes: 'Jean',
+    images: 'JeanLestang.jpg',
     duree: 60
 };
 
@@ -41,8 +42,8 @@ const tfm = {
 
 const ishare = {
     projet: 'ISHARE',
-    personnes: 'Laurent',
-    images: 'LaurentSauze.jpg',
+    personnes: 'Jean',
+    images: 'JeanLestang.jpg',
     duree: 120
 };
 
@@ -56,12 +57,14 @@ const ptrakl = {
 const amigo = {
     projet: 'AMIGO',
     personnes: 'Corinne',
+    images: 'CorinneSarkany.jpg',
     duree: 120
 };
 
 const vidcco = {
     projet: 'VIDCCO',
     personnes: 'Corinne',
+    images: 'CorinneSarkany.jpg',
     duree: 60
 };
 
@@ -74,19 +77,21 @@ const encours = {
 const archi = {
     projet: "Sujets d'architecture",
     personnes: 'Jean Marc',
-    images: 'JeanMarcBourriatges.png',
+    images: 'JeanMarcBouriatges.jpg',
     duree: 240
 };
 
 const technique = {
     projet: 'Sujets techniques',
     personnes: 'Philippe, Laurent',
+    images: 'PhilippeEtLaurent.jpg',
     duree: 240
 };
 
 const infos = {
     projet: "Infos générales",
     personnes: 'Nathalie',
+    images: 'NathalieGerentet.jpg',
     duree: 240
 };
 
