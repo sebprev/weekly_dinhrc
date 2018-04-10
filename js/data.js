@@ -70,7 +70,7 @@ const vidcco = {
 
 const encours = {
     projet: 'Projets en cours',
-    personnes: '(Step, Mohican, Boost)',
+    personnes: 'Step, Mohikan...',
     duree: 180
 };
 
@@ -107,4 +107,4 @@ const nexttk = {
     duree: 0
 };
 
-const data = [milweb, sirocco, siroccolight, atcweb, occtet, tfm, ishare, ptrakl, amigo, vidcco, encours, archi, technique, infos, demo, nexttk];
+const data = [milweb, sirocco, siroccolight, atcweb, occtet, tfm, ishare, ptrakl, amigo, vidcco, encours, archi, technique, infos, nexttk, demo];
