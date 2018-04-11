@@ -6,23 +6,35 @@ const time = document.getElementById('time');
 const imgLeft = document.getElementById('imgLeft');
 const imgRight = document.getElementById('imgRight');
 
+let changementEnCours = undefined;
+
 document.getElementById('btnStart').addEventListener('click', function(event) {
     document.getElementsByClassName('previous')[0].addEventListener('click', function(event) {
-        if (currentIndex > 0) {
+        if ((currentIndex > 0) && !changementEnCours) {
             currentIndex = currentIndex - 1;
+            setChangementEnCours();
             start();
         }
     });
 
     document.getElementsByClassName('next')[0].addEventListener('click', function(event) {
-        if ((currentIndex + 1) < data.length) {
+        if (((currentIndex + 1) < data.length) && !changementEnCours) {
             currentIndex = currentIndex + 1;
+            setChangementEnCours();
             start();
         }
     });
 
     start();
 });
+
+// Pour éviter qu'un dbl click (ou 2 clicks rapides) soit fasse 2 fois "suivant"
+const setChangementEnCours = function() {
+    changementEnCours = setTimeout(() => {
+        clearTimeout(changementEnCours);
+        changementEnCours = undefined;
+    }, 1000);
+}
 
 let timerProgress = undefined;
 
@@ -95,7 +107,7 @@ const setProgressValue = function(value) {
     progress.innerText = value;
 }
 
-// Ployfill pour le PADSTART
+// Polyfill pour le PADSTART
 if (!String.prototype.padStart) {
     String.prototype.padStart = function padStart(targetLength, padString) {
         targetLength = targetLength >> 0;
