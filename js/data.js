@@ -14,8 +14,8 @@ const sirocco = {
 
 const siroccolight = {
     projet: 'SIROCCO LIGHT',
-    personnes: 'Philippe',
-    images: 'Philippe.jpg',
+    personnes: 'Jean',
+    images: 'Jean.jpg',
     duree: 120
 };
 
