@@ -2,7 +2,7 @@ const milweb = {
     projet: 'MILWEB',
     personnes: 'Joël',
     images: 'Joel.jpg',
-    duree: 240
+    duree: 180
 };
 
 const sirocco = {
@@ -20,7 +20,7 @@ const siroccolight = {
 };
 
 const atcweb = {
-    projet: 'ATCWEB',
+    projet: 'ATC (ATMOS)',
     personnes: 'Philippe',
     images: 'Philippe.jpg',
     duree: 120
