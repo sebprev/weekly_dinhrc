@@ -7,8 +7,8 @@ const milweb = {
 
 const sirocco = {
     projet: 'SIROCCO',
-    personnes: 'Phu Quang',
-    images: 'PhuQuang.jpg',
+    personnes: 'Jean',
+    images: 'Jean.jpg',
     duree: 240
 };
 
@@ -42,8 +42,8 @@ const tfm = {
 
 const ishare = {
     projet: 'ISHARE',
-    personnes: 'Jean',
-    images: 'Jean.jpg',
+    personnes: 'Laurent',
+    images: 'Laurent.jpg',
     duree: 120
 };
 
