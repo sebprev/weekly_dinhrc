@@ -69,7 +69,7 @@ const vidcco = {
 };
 
 const encours = {
-    projet: 'Projets en cours',
+    projet: 'Sujets transverses',
     personnes: 'Step, Mohikan...',
     duree: 180
 };
