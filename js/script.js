@@ -5,6 +5,8 @@ const progress = document.getElementById('pbar');
 const time = document.getElementById('time');
 const imgLeft = document.getElementById('imgLeft');
 const imgRight = document.getElementById('imgRight');
+const dateNow = document.getElementsByClassName("date")[0];
+const timeNow = document.getElementsByClassName("time")[0];
 
 let changementEnCours = undefined;
 
@@ -97,6 +99,10 @@ const initTimer = function(secondes) {
                 progress.className = "progress-bar bg-danger";
                 time.style.color = "red";
             }
+            else if (i >= (secondes - 10)) {
+                progress.className = "progress-bar bg-warning";
+                time.style.color = "orange";
+            }
         }, 1000);
     }
 
@@ -105,6 +111,17 @@ const initTimer = function(secondes) {
 const setProgressValue = function(value) {
     progress.style.width = value;
     progress.innerText = value;
+}
+
+const initClock = function() {
+    const d = new Date();
+    dateNow.innerHTML = d.toLocaleDateString();
+    timeNow.innerHTML = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2);
+    setInterval(function() {
+        const d = new Date();
+        timeNow.innerHTML = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2);
+    }, 1000);
+
 }
 
 // Polyfill pour le PADSTART
