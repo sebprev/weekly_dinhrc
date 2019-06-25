@@ -90,8 +90,7 @@ const technique = {
 
 const infos = {
     projet: "Infos générales",
-    personnes: 'Nathalie',
-    images: 'Nathalie.jpg',
+    personnes: 'Stéphane',
     duree: 240
 };
 
