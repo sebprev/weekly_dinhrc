@@ -12,15 +12,8 @@ const sirocco = {
     duree: 240
 };
 
-const siroccolight = {
-    projet: 'SIROCCO LIGHT',
-    personnes: 'Jean',
-    images: 'Jean.png',
-    duree: 60
-};
-
-const occtet = {
-    projet: 'OCCTET',
+const siroccolight_occtet = {
+    projet: 'SIROCCO LIGHT - OCCTET',
     personnes: 'Jean',
     images: 'Jean.png',
     duree: 60
@@ -30,7 +23,7 @@ const atmos = {
     projet: 'ATMOS',
     personnes: 'Philippe',
     images: 'Philippe.png',
-    duree: 60
+    duree: 180
 };
 
 const tfm = {
@@ -44,7 +37,7 @@ const ishare = {
     projet: 'ISHARE',
     personnes: 'Yoann',
     images: 'Yoann.png',
-    duree: 120
+    duree: 60
 };
 
 const occitane = {
@@ -103,4 +96,4 @@ const demo = {
     duree: 300
 };
 
-const data = [milweb, sirocco, siroccolight, occtet, atmos, tfm, ishare, occitane, amigo, vidcco, encours, archi, technique, infos, demo];
+const data = [milweb, sirocco, siroccolight_occtet, atmos, tfm, ishare, occitane, amigo, vidcco, encours, archi, technique, infos, demo];
